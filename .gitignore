@@ -1,0 +1,39 @@
+# Virtual environments
+venv/
+env/
+.env/
+.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# DVC cache & credentials (never commit these)
+.dvc/cache/
+.dvc/tmp/
+.dvc/config.local
+.dvc/tmp/gdrive-user-credentials.json
+
+# DVC-tracked data payloads (tracked via .dvc pointer files instead)
+/data/raw/
+/data/processed/
+/models/*.h5
+/models/history.csv
+
+# Reports (generated artifacts)
+/reports/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Metrics (generated — committed separately as DVC metric)
+# metrics.json is committed to Git (declared cache: false in dvc.yaml)
