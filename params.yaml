@@ -1,0 +1,10 @@
+preprocess:
+  test_size: 0.1   # Fraction of training data held out as validation set
+  seed: 42          # Random seed for reproducible train/val split
+
+train:
+  dense_units: 128        # Number of units in the hidden Dense layer
+  dropout_rate: 0.3       # Dropout fraction after the hidden Dense layer
+  learning_rate: 0.001    # Adam optimizer learning rate
+  epochs: 15              # Total training epochs
+  batch_size: 64          # Mini-batch size
